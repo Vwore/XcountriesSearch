@@ -12,7 +12,7 @@ function App() {
         console.log(data);
         setCountry(data.data);
       })
-      .catch((e) => console.error(e));
+      .catch((e) => console.log(e.response));
   }, []);
   return <div className="App">
     <div className="card-container">
