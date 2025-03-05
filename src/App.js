@@ -12,7 +12,7 @@ function App() {
         console.log(data);
         setCountry(data.data);
       })
-      .catch((e) => console.log('Error fetching data:'+e.response));
+      .catch((e) => console.error('Error fetching data:'+e.response));
   }, []);
   return <div className="App">
     <div className="card-container">
