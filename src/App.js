@@ -10,8 +10,9 @@ function App() {
 
   function filter(search) {
     const filterValue = country.filter((value) => {
-      const country = value.common;
-      return country.includes(search);
+      const country = value.common.toLowerCase();
+      const search2= search.toLowerCase();
+      return country.includes(search2);
     });
     setFilteredCountry(filterValue);
   }
